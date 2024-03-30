@@ -6,6 +6,7 @@ const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 require("dotenv").config();
 
+
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => console.log("Database Connected Successfully"))
